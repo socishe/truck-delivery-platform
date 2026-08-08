@@ -1,0 +1,29 @@
+{
+  "name": "truck-delivery-platform",
+  "version": "0.1.0",
+  "description": "Production-ready MVP for local truck delivery platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "test": "pnpm -r test",
+    "db:migrate": "cd ./prisma && pnpm prisma migrate dev",
+    "db:seed": "cd ./prisma && pnpm prisma db seed",
+    "db:studio": "cd ./prisma && pnpm prisma studio",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "clean": "pnpm -r --parallel exec rm -rf dist node_modules .turbo"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
