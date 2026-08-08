@@ -1,0 +1,11 @@
+{
+  "extends": "../../.eslintrc.json",
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "react/react-in-jsx-scope": "off"
+      }
+    }
+  ]
+}
